@@ -23,7 +23,7 @@ Q8. Input *a* and *b* and compute *a* divided by *b*.
 
 Q9. Take inputs until an input of 0 is received, then output the smallest of the inputs.
 
-Q10. Create a Little Man Computer program to take two inputs and output the highest common factor (look up Euclid's algorithm).
+Q10. Take two inputs and output the highest common factor (look up [Euclid's algorithm](http://en.wikipedia.org/wiki/Euclidean_algorithm)).
 
 Q11. **Basic objective**: Create a Little Man Computer program to take three inputs (a, b, and c) and determine if they form a Pythagorean triple (i.e. a2+b2=c2). Your program should output a zero (000) if the inputs are not a Pythagorean triple, and a one (001) if the inputs are a Pythagorean triple.
 
