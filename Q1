@@ -1,0 +1,17 @@
+# Q1. Ask for 3 numbers, output the total
+
+new_num INP
+        ADD total
+        STO total
+
+        LDA count
+        SUB one
+        STO count
+        BRP new_num
+
+        LDA total
+        OUT total
+
+total   DAT
+count   DAT 2
+one     DAT 1
