@@ -1,5 +1,5 @@
 # Little Man Computer
-Test questions and answers using the Little Man Computer
+Test questions and answers using the Little Man Computer (LMC)
 
 ## Background
 [Wikipedia on LMC](http://en.wikipedia.org/wiki/Little_man_computer)
