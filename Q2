@@ -1,0 +1,13 @@
+# Q2. Count down from 5-0
+
+while   LDA count
+        OUT
+
+        SUB one
+        STO count
+
+        BRP while
+	HLT
+
+count   DAT 5
+one     DAT 1
