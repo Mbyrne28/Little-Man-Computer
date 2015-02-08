@@ -12,3 +12,6 @@ Test questions and answers using the Little Man Computer (LMC)
 [Q3. Count up from 1-5](/Q3)
 
 [Q4. input a series of numbers and add, if 999 output total and stop](/Q4)
+
+## Links
+[Ian! D. Allen](http://teaching.idallen.com/dat2343/11w/notes/301_LMC.html)
