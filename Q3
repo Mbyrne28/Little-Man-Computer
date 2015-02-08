@@ -1,0 +1,17 @@
+# Q3. count up 1-5
+
+while   LDA total
+	ADD one
+	STO total
+        OUT
+
+        LDA limit
+	SUB total
+        BRZ sleep 
+	BRA while
+
+sleep	HLT
+
+total	DAT
+limit   DAT 5
+one     DAT 1
