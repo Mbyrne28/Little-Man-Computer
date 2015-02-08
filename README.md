@@ -2,4 +2,4 @@
 Test questions and answers using the Little Man Computer
 
 ## Background
-Wikipedia on LMC
+Wikipedia on LMC : http://en.wikipedia.org/wiki/Little_man_computer
