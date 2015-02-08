@@ -1,0 +1,23 @@
+# Q4. input a series of numbers and add, if -999 output total and stop
+
+while INP
+	    STO temp
+
+	    LDA test
+	    ADD temp
+
+	    BRZ sleep
+	
+	    LDA temp
+	    ADD total
+	    STO total	
+
+	    BRA while
+
+sleep	LDA total
+	    OUT
+	    HLT
+
+temp	DAT
+total	DAT
+test  DAT 999
