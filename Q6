@@ -1,0 +1,24 @@
+			INP
+			STA in_a
+			INP
+			STA in_b
+			
+loop	LDA in_a
+			BRZ sleep
+			
+			SUB one
+			STA in_a
+			
+			LDA in_b
+			ADD total
+			STA total
+			BRA loop
+
+sleep	LDA total
+			OUT
+			HLT
+
+total	DAT
+one		DAT 1
+in_a 	DAT
+in_b	DAT
