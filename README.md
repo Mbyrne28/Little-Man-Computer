@@ -15,7 +15,7 @@ Test questions and answers using the Little Man Computer (LMC)
 
 Q5. Output the first *n* Fibonacci numbers. Your program should take the input n and then output the first *n* elements of the sequence. I.e. 1, 1, 2, 3, 5
 
-Q6. [Take two inputs *a*, *b* and compute *a* × *b*.](Q6)
+[Q6. Take two inputs *a*, *b* and compute *a* × *b*.](Q6)
 
 Q7. Input *a* and compute *a* divided by 2.
 
