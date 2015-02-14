@@ -19,7 +19,7 @@ Q5. Output the first *n* Fibonacci numbers. Your program should take the input n
 
 Q7. Input *a* and compute *a* divided by 2.
 
-Q8. Input *a* and *b* and compute *a* divided by *b*.
+[Q8. Input *a* and *b* and compute *a* divided by *b*.](Q8)
 
 Q9. Take inputs until an input of 0 is received, then output the smallest of the inputs.
 
