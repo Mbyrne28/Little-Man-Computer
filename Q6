@@ -1,18 +1,18 @@
-	INP
-	STA 	in_a
-	INP
-	STA 	in_b
+	IN
+	STO 	in_a
+	IN
+	STO 	in_b
 			
 loop	LDA 	in_a
 	BRZ 	end
 			
 	SUB 	one
-	STA 	in_a
+	STO 	in_a
 			
 	LDA 	in_b
 	ADD 	total
-	STA 	total
-	BRA	loop
+	STO 	total
+	BR	loop
 
 end	LDA 	total
 	OUT
