@@ -3,37 +3,39 @@
 # Result 2 Remainder
 #
 # example, 		20 ÷ 5:
-# Subtract 5         20 – 5 = 15
-# Subtract 5 again   15 – 5 = 10
-# Subtract 5 again   10 – 5 = 5
-# Subtract 5 again   5 – 5 = 0
+# Subtract 5         	20 – 5 = 15
+# Subtract 5 again   	15 – 5 = 10
+# Subtract 5 again   	10 – 5 = 5
+# Subtract 5 again   	5 – 5 = 0
+#
+# Result Q:4 R:0
 
 
-			IN
-			STO		in_a
-			IN
-			STO		in_div
-			BR		loop
+	IN
+	STO	in_a
+	IN
+	STO	in_div
+	BR	loop
 
-end		LDA		divs
-			OUT
-			LDA		in_a	
-			OUT
-			HLT
+end	LDA	divs
+	OUT
+	LDA	in_a	
+	OUT
+	HLT
 
-divr	STO		in_a
-			LDA		divs
-			ADD		one
-			STO		divs
+divr	STO	in_a
+	LDA	divs
+	ADD	one
+	STO	divs
 
-loop	LDA		in_a
-			SUB		in_div
+loop	LDA	in_a
+	SUB	in_div
 
-			BRP		divr
-			BR		end
+	BRP	divr
+	BR	end
 
 
-divs			DAT
-one	DAT 	1
+divs	DAT
+one	DAT	1
 in_a 	DAT
 in_div	DAT
