@@ -1,0 +1,52 @@
+# Q5. Output the first n Fibonacci numbers. 
+# Your program should take the input n 
+# and output the first n elements of the sequence. I.e. 1, 1, 2, 3, 5
+#
+# F_n = F_{n-1} + F_{n-2}
+# F0 = 1
+# F1 = 1
+
+
+	IN
+	STO	n
+
+	LDA	F0
+	OUT
+	LDA	F1
+	OUT
+
+	LDO	n
+	SUB	ONE
+	SUB	ONE
+	STO	n
+
+	BR	main
+
+end	HLT
+
+main	LDA	ZERO
+	STO	Ftemp
+	LDA	Ftemp
+	ADD	F0
+	ADD	F1
+	STO	Ftemp
+	OUT
+	LDA	F1
+	STO	F0
+	LDA	Ftemp
+	STO	F1
+
+	LDA	n
+	SUB	ONE
+
+	BRZ	end
+
+	STO	n
+	BR	main
+
+ONE	DAT	1
+ZERO	DAT	0
+n 	DAT
+F0	DAT	1
+F1	DAT	1
+Ftemp	DAT
