@@ -11,10 +11,19 @@
 	INP	n2
 	STO	n2
 	
-MAIN	LDO	n2
+MAIN	LDO	n1
+GOSUB	SUB	n2
+	...
+	Result = 0
+	BR END
+	result < n2
+	Yes? n2=>n1, remainder => n2, BR MAIN
+	No? BR GOSUB
 	...
 	
-END	HLT	
+END	LDA	n2
+	OUT
+	HLT	
 	
 n1	DAT
 n2	DAT
