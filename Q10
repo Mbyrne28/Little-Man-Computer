@@ -6,10 +6,15 @@
 # End when remainder = 0
 # Result 21
 
-	INP n1
-	STO n1
+	INP	n1
+	STO	n1
 	INP	n2
-	STO n2
+	STO	n2
+	
+MAIN	LDO	n2
+	...
+	
+END	HLT	
 	
 n1	DAT
 n2	DAT
