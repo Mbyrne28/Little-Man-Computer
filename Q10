@@ -1,0 +1,8 @@
+# Example
+# To begin, multiples of 462 are subtracted from 1071 until the remainder is less than 462
+# 1071 = 2 × 462 + 147
+# 462 = 3 × 147 + 21
+# 147 = 7 × 21 + 0
+# End when remainder = 0
+# Result 21
+
