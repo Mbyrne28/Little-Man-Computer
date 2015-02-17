@@ -5,6 +5,9 @@
 # 147 = 7 × 21 + 0
 # End when remainder = 0
 # Result 21
+# test 100, 75 => 25
+# test 100, 50 => 50
+# test 168, 32 => 8
 
 	INP	n1
 	STO	n1
@@ -13,7 +16,9 @@
 	
 MAIN	LDO	n1
 GOSUB	SUB	n2
+
 	...
+        BRZ END
 	Result = 0
 	BR END
 	result < n2
