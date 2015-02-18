@@ -9,26 +9,48 @@
 # test 100, 50 => 50
 # test 168, 32 => 8
 
-	INP	n1
-	STO	n1
-	INP	n2
-	STO	n2
+		INP		n1
+		STO		n1
+		INP		n2
+		STO		n2
 	
-MAIN	LDO	n1
-GOSUB	SUB	n2
+MAIN	LDO		n1
+		SUB		n2
 
-	...
-        BRZ END
-	Result = 0
-	BR END
-	result < n2
-	Yes? n2=>n1, remainder => n2, BR MAIN
-	No? BR GOSUB
-	...
-	
-END	LDA	n2
-	OUT
-	HLT	
-	
-n1	DAT
-n2	DAT
+#		Result = 0?
+# ------------------
+
+		BRZ 	END
+		
+#		Result < n2
+# ------------------
+
+		STO		n1
+		LDA		n2
+		SUB		n1
+		BRP		SWAP
+		BR		MAIN
+
+
+#		Swap n2 & n1
+# ------------------
+
+SWAP	LDO		ZERO
+		STO		temp
+		LDO		n1
+		STO		temp
+		LDO		n2
+		STO		n1
+		LDA		temp
+		STO		n2
+		
+		BR		MAIN
+
+END		LDA		n2
+		OUT
+		HLT	
+		
+n1		DAT
+n2		DAT
+ZERO	DAT		0
+temp	DAT
