@@ -9,45 +9,45 @@
 # test 100, 50 => 50
 # test 168, 32 => 8
 
-		IN		n1
-		STO		n1
-		IN		n2
-		STO		n2
+	IN	n1
+	STO	n1
+	IN	n2
+	STO	n2
 	
-MAIN	LDA		n1
-		SUB		n2
+MAIN	LDA	n1
+	SUB	n2
 
-#		Result = 0?
+#	Result = 0?
 # ------------------
 
-		BRZ 	END
+	BRZ 	END
 		
-#		Result < n2?
+#	Result < n2?
 # ------------------
 
-		STO		n1
-		LDA		n2
-		SUB		n1
-		BRP		SWAP
-		BR		MAIN
+	STO	n1
+	LDA	n2
+	SUB	n1
+	BRP	SWAP
+	BR	MAIN
 
 
-#		Swap n2 & n1
+#	Swap n2 & n1
 # ------------------
 
-SWAP	LDA		n1
-		STO		temp
-		LDA		n2
-		STO		n1
-		LDA		temp
-		STO		n2
+SWAP	LDA	n1
+	STO	temp
+	LDA	n2
+	STO	n1
+	LDA	temp
+	STO	n2
 		
-		BR		MAIN
+	BR	MAIN
 
-END		LDA		n2
-		OUT
-		HLT	
+END	LDA	n2
+	OUT
+	HLT	
 		
-n1		DAT
-n2		DAT
+n1	DAT
+n2	DAT
 temp	DAT
