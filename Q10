@@ -9,12 +9,12 @@
 # test 100, 50 => 50
 # test 168, 32 => 8
 
-		INP		n1
+		IN		n1
 		STO		n1
-		INP		n2
+		IN		n2
 		STO		n2
 	
-MAIN	LDO		n1
+MAIN	LDA		n1
 		SUB		n2
 
 #		Result = 0?
@@ -22,7 +22,7 @@ MAIN	LDO		n1
 
 		BRZ 	END
 		
-#		Result < n2
+#		Result < n2?
 # ------------------
 
 		STO		n1
@@ -35,11 +35,9 @@ MAIN	LDO		n1
 #		Swap n2 & n1
 # ------------------
 
-SWAP	LDO		ZERO
+SWAP	LDA		n1
 		STO		temp
-		LDO		n1
-		STO		temp
-		LDO		n2
+		LDA		n2
 		STO		n1
 		LDA		temp
 		STO		n2
@@ -52,5 +50,4 @@ END		LDA		n2
 		
 n1		DAT
 n2		DAT
-ZERO	DAT		0
 temp	DAT
