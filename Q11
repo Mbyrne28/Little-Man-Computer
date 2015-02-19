@@ -7,3 +7,28 @@
 # a=4 b=5 c=6 (4x4 + 5x5 = 6x6) => 16 + 25 = 36 Result (000)
 # a=9 b=40 c=41 (9x9 + 40x40 = 41x41) => 81 + 1600 = 1681 Result (001)
 
+	IN	a
+	STO	a
+	IN	b
+	STO	b
+	IN	c
+	STO	c
+	
+# CONTROL LOOP	
+# put variable into square fn
+
+MAIN	STO	temp
+	STO	counter
+SQUARE	SUB	one
+	BRZ	# put result into correct space
+	STO	temp
+	
+	
+	
+	
+temp	DAT
+counter	DAT
+one	DAT	1
+a	DAT 
+b	DAT
+c	DAT
