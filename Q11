@@ -1,0 +1,9 @@
+# Q11. Take three inputs (a, b, and c) and determine if they form a Pythagorean triple
+# (i.e. a^2+b^2=c^2). 
+# Output a zero (000) if the inputs are not a Pythagorean triple
+# Output a one (001) if the inputs are a Pythagorean triple.
+# Examples
+# a=3 b=4 c=5 (3x3 + 4x4 = 5x5) => 9 + 16 = 25 Result (001)
+# a=4 b=5 c=6 (4x4 + 5x5 = 6x6) => 16 + 25 = 36 Result (000)
+# a=9 b=40 c=41 (9x9 + 40x40 = 41x41) => 81 + 1600 = 1681 Result (001)
+
