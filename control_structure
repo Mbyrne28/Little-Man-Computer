@@ -1,0 +1,57 @@
+# Here we iterate through our BODY 3 times then proceed to the END
+# The SWITCH section checks the 'temp' value and directs the program to a custom function
+# the functions are all wired back to the BODY 
+
+SWITCH	LDA	temp
+	SUB	c
+	BRZ	a_fn
+
+	LDA	temp
+	SUB	b
+	BRZ	b_fn
+
+	LDA	temp
+	SUB	a
+	BRZ	c_fn
+
+	BR	END
+
+a_fn	LDA	hello
+	OUT
+	LDA	one
+	OUT
+	BR	BODY
+
+b_fn	LDA	hello
+	OUT
+	LDA	one
+	OUT
+	OUT
+	BR	BODY
+
+c_fn	LDA	hello
+	OUT
+	LDA	one
+	OUT
+	OUT
+	OUT
+	BR	BODY
+	
+	
+BODY	LDA	temp
+	OUT
+	ADD	one
+	STO	temp
+
+	BR	SWITCH
+
+
+END	HLT
+
+
+hello 	DAT	999	
+temp	DAT	1
+one	DAT	1
+a	DAT	1
+b	DAT	2
+c	DAT	3
