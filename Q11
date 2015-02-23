@@ -23,9 +23,16 @@ SQUARE	SUB	one
 	BRZ	# put result into correct space
 	STO	temp
 	
+TRUE	LDA	TRUE
+	OUT
+FALSE	LDA	FALSE
+	OUT
+	
+	HLT
 	
 	
-	
+TRUE	DAT	001
+FALSE	DAT	000
 temp	DAT
 counter	DAT
 one	DAT	1
