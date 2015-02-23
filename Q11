@@ -7,11 +7,11 @@
 # a=4 b=5 c=6 (4x4 + 5x5 = 6x6) => 16 + 25 = 36 Result (000)
 # a=9 b=40 c=41 (9x9 + 40x40 = 41x41) => 81 + 1600 = 1681 Result (001)
 
-	IN	a
+	IN
 	STO	a
-	IN	b
+	IN
 	STO	b
-	IN	c
+	IN
 	STO	c
 	
 # CONTROL LOOP	
